@@ -1,0 +1,20 @@
+{
+  "name": "slack-vote-app",
+  "version": "0.1.0",
+  "description": "Slack에서 동작하는 투표(설문) 앱",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.19.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node-dev": "^2.0.0",
+    "@types/node": "^20.14.10"
+  }
+}
